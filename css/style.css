@@ -241,6 +241,17 @@ body {
   pointer-events: auto;
 }
 
+.search__btn:hover,
+.search__btn:focus {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search__btn:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .user-navigation,
 .menu__list,
 .submenu__items {
