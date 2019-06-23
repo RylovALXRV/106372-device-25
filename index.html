@@ -16,13 +16,45 @@
     <div class="navigation__top">
       <form action="https://echo.htmlacademy.ru" method="get" class="search">
         <input type="search" name="search-field" id="search" placeholder="Поиск по сайту" required>
-        <label for="search">Поиск</label>
+        <label class="visually-hidden" for="search">Поиск</label>
         <button class="search__btn" type="submit">Найти</button>
       </form>
       <ul class="user-navigation">
-        <li class="user-navigation__item user-navigation__item--login"><a class="user-navigation__link user-navigation__link--login" href="#">Войти</a></li>
-        <li class="user-navigation__item user-navigation__item--compare"><a class="user-navigation__link user-navigation__link--compare" href="#">Сравнить</a></li>
-        <li class="user-navigation__item user-navigation__item--basket"><a class="user-navigation__link user-navigation__link--basket" href="#">Корзина</a></li>
+        <li class="user-navigation__item user-navigation__item--login">
+          <a class="user-navigation__link user-navigation__link--login" href="#">Войти
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+            <path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+	            C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+          </svg>
+          </a>
+        </li>
+        <li class="user-navigation__item user-navigation__item--compare">
+          <a class="user-navigation__link user-navigation__link--compare" href="#">Сравнить
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+            <rect x="8" y="2" width="1.984" height="8"/>
+              <rect y="3" width="1.984" height="7"/>
+              <rect x="4" width="2" height="10"/>
+          </svg>
+          </a>
+        </li>
+        <li class="user-navigation__item user-navigation__item--basket">
+          <a class="user-navigation__link user-navigation__link--basket" href="#">Корзина
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+            <g>
+              <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+		            c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+		            c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+		            c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
+              <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+		            c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+		            C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
+            </g>
+          </svg>
+          </a>
+        </li>
       </ul>
     </div>
     <div class="navigation__bottom menu">
@@ -53,18 +85,15 @@
 </header>
 
 <main>
-  <section class="slider">
+  <section class="slider js-slider" id="slider">
     <h2 class="visually-hidden">Слайдер товаров магазина Девайс</h2>
-    <input class="visually-hidden" type="radio" name="slider" id="slider-1" checked>
-    <input class="visually-hidden" type="radio" name="slider" id="slider-2">
-    <input class="visually-hidden" type="radio" name="slider" id="slider-3">
     <ol class="slider__list">
       <li class="slider__item slider-card" id="product-1">
         <div class="slider-card__image">
           <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка">
         </div>
         <div class="slider-card__wrapper">
-          <h3 class="slider-card__header">Делай селфи, как Бен Стиллер!</h3>
+          <h3 class="slider-card__header">Делай селфи,<br> как Бен Стиллер!</h3>
           <p class="slider-card__specification">Самая длинная палка для селфи доступна в&nbsp;нашем магазине. Восемь
             (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;килограмм.</p>
           <a class="slider-card__btn btn" href="#">Подробнее</a>
@@ -95,7 +124,7 @@
           <img src="img/slider-2.png" width="345" height="485" alt="Селфи палка">
         </div>
         <div class="slider-card__wrapper">
-          <h3 class="slider-card__header">Худеем правильно!</h3>
+          <h3 class="slider-card__header">Худеем<br> правильно!</h3>
           <p class="slider-card__specification">Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы не&nbsp;пропускать
             занятия и&nbsp;соблюдать диету.</p>
           <a class="slider-card__btn btn" href="#">Подробнее</a>
@@ -137,13 +166,13 @@
     </ol>
     <ul class="slider__controls">
       <li>
-        <label class="slider__btn slider__btn--active" for="slider-1">Первая кнопка слайдера</label>
+        <button type="button" class="slider__btn slider__btn--active" data-slider="product-1"></button>
       </li>
       <li>
-        <label class="slider__btn" for="slider-2">Вторая кнопка слайдера</label>
+        <button type="button" class="slider__btn" data-slider="product-2"></button>
       </li>
       <li>
-        <label class="slider__btn" for="slider-3">Третья кнопка слайдера</label>
+        <button type="button" class="slider__btn" data-slider="product-3"></button>
       </li>
     </ul>
   </section>
@@ -160,7 +189,7 @@
       </li>
       <li class="popular__item">
         <a class="popular__link" href="catalog.html">
-          <h3>Моноподы для селфи</h3>
+          <h3>Моноподы для&nbsp;селфи</h3>
             <div class="popular__img popular__img--monopods">
           <img src="img/popular-selfi.svg" width="86" height="117" alt="Моноподы для селфи">
           </div>
@@ -200,35 +229,32 @@
       </li>
     </ul>
   </section>
-  <section class="services">
+  <section class="services js-slider" id="services">
     <h2 class="visually-hidden">Сервисное обслуживание</h2>
     <div class="services__wrapper">
-      <ul class="services__column controls">
-        <li class="controls__item">
-          <label class="controls__btn controls__btn--active btn" for="delivery-field">Доставка</label>
-          <input class="visually-hidden" type="radio" name="delivery" id="delivery-field">
+      <ul class="services__controls">
+        <li>
+          <button class="services__btn btn services__btn--active" type="button" data-slider="delivery">Доставка</button>
         </li>
-        <li class="controls__item controls__item--warranty">
-          <label class="controls__btn btn" for="warranty-field">Гарания</label>
-          <input class="visually-hidden" type="radio" name="warranty" id="warranty-field" checked>
+        <li>
+          <button class="services__btn btn" type="button" data-slider="warranty">Гарантия</button>
         </li>
-        <li class="controls__item">
-          <label class="controls__btn btn" for="credit-field">Кредит</label>
-          <input class="visually-hidden" type="radio" name="credit" id="credit-field">
+        <li>
+          <button class="services__btn btn" type="button" data-slider="credit">Кредит</button>
         </li>
       </ul>
-      <ul class="services__column description">
-        <li class="description__item delivery">
+      <ul class="services__description">
+        <li class="services__item delivery" id="delivery">
           <h3>Доставка</h3>
           <p>Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо
             заработаем, поднимая его на&nbsp;ваш этаж.</p>
         </li>
-        <li class="description__item warranty hidden">
+        <li class="services__item warranty hidden" id="warranty">
           <h3>Гарантия</h3>
           <p>Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим
-            вам новый. Товар, не&nbsp;дом, конечно&nbsp;же.</p>
+            вам новый.<br> Товар, не&nbsp;дом, конечно&nbsp;же.</p>
         </li>
-        <li class="description__item credit hidden">
+        <li class="services__item credit hidden" id="credit">
           <h3>Кредит</h3>
           <p>Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
             кредита. Выгодные для нашего банка, разумеется.</p>
@@ -240,22 +266,22 @@
     <h2 class="visually-hidden">Логотипы компаний, предоставляющих свой товар на продажу</h2>
     <ul class="partners__list">
       <li class="partners__item">
-        <a href="#">
+        <a class="partners__img partners__img--dji" href="#">
           <img src="img/logo-1.jpg" width="260" height="100" alt="Логотип компании Dji">
         </a>
       </li>
       <li class="partners__item">
-        <a href="#">
+        <a class="partners__img partners__img--gadgets" href="#">
           <img src="img/logo-2.jpg" width="260" height="100" alt="Логотип компании SP Gadgets">
         </a>
       </li>
       <li class="partners__item">
-        <a href="#">
+        <a class="partners__img partners__img--go-pro" href="#">
           <img src="img/logo-3.jpg" width="260" height="100" alt="Логотип компании GoPro">
         </a>
       </li>
       <li class="partners__item">
-        <a href="#">
+        <a class="partners__img partners__img--vive" href="#">
           <img src="img/logo-4.jpg" width="260" height="100" alt="Логотип компании Vive">
         </a>
       </li>
