@@ -88,16 +88,16 @@
   <section class="slider js-slider" id="slider">
     <h2 class="visually-hidden">Слайдер товаров магазина Девайс</h2>
     <ol class="slider__list">
-      <li class="slider__item slider-card" id="product-1">
-        <div class="slider-card__image">
+      <li class="slider__item slider__item--current product-1" id="product-1">
+        <div class="slider__image">
           <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка">
         </div>
-        <div class="slider-card__wrapper">
-          <h3 class="slider-card__header">Делай селфи,<br> как Бен Стиллер!</h3>
-          <p class="slider-card__specification">Самая длинная палка для селфи доступна в&nbsp;нашем магазине. Восемь
+        <div class="slider__wrapper">
+          <h3 class="slider__header">Делай селфи,<br> как Бен Стиллер!</h3>
+          <p class="slider__specification">Самая длинная палка для селфи доступна в&nbsp;нашем магазине. Восемь
             (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;килограмм.</p>
-          <a class="slider-card__btn btn" href="#">Подробнее</a>
-          <ul class="slider-card__list characteristics">
+          <a class="slider__btn btn" href="#">Подробнее</a>
+          <ul class="characteristics">
             <li class="characteristics__item">
               <dl>
                 <dt>8,5 м</dt>
@@ -119,16 +119,16 @@
           </ul>
         </div>
       </li>
-      <li class="slider__item slider-card hidden" id="product-2">
-        <div class="slider-card__image">
+      <li class="slider__item product-2" id="product-2">
+        <div class="slider__image">
           <img src="img/slider-2.png" width="345" height="485" alt="Селфи палка">
         </div>
-        <div class="slider-card__wrapper">
-          <h3 class="slider-card__header">Худеем<br> правильно!</h3>
-          <p class="slider-card__specification">Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы не&nbsp;пропускать
+        <div class="slider__wrapper">
+          <h3 class="slider__header">Худеем<br> правильно!</h3>
+          <p class="slider__specification">Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы не&nbsp;пропускать
             занятия и&nbsp;соблюдать диету.</p>
-          <a class="slider-card__btn btn" href="#">Подробнее</a>
-          <ul class="slider-card__list characteristics">
+          <a class="slider__btn btn" href="#">Подробнее</a>
+          <ul class="characteristics">
             <li class="characteristics__item">
               <dl>
                 <dt>48 часов</dt>
@@ -138,16 +138,15 @@
           </ul>
         </div>
       </li>
-      <li class="slider__item slider-card hidden" id="product-3">
-        <div class="slider-card__image">
+      <li class="slider__item product-3" id="product-3">
+        <div class="slider__image">
           <img src="img/slider-3.png" width="526" height="334" alt="Селфи палка">
         </div>
-        <div class="slider-card__wrapper">
-          <h3 class="slider-card__header">Порхает как бабочка, жалит как пчела!</h3>
-          <p class="slider-card__specification">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным
-            лазером, замаскированным под стандартную камеру.</p>
-          <a class="slider-card__btn btn" href="#">Подробнее</a>
-          <ul class="slider-card__list characteristics">
+        <div class="slider__wrapper">
+          <h3 class="slider__header">Порхает как бабочка, жалит как пчела!</h3>
+          <p class="slider__specification">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под стандартную камеру.</p>
+          <a class="slider__btn btn" href="#">Подробнее</a>
+          <ul class="characteristics">
             <li class="characteristics__item">
               <dl>
                 <dt>800 м</dt>
@@ -244,17 +243,17 @@
         </li>
       </ul>
       <ul class="services__description">
-        <li class="services__item delivery" id="delivery">
+        <li class="services__item delivery services__item--current" id="delivery">
           <h3>Доставка</h3>
           <p>Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо
             заработаем, поднимая его на&nbsp;ваш этаж.</p>
         </li>
-        <li class="services__item warranty hidden" id="warranty">
+        <li class="services__item warranty" id="warranty">
           <h3>Гарантия</h3>
           <p>Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим
             вам новый.<br> Товар, не&nbsp;дом, конечно&nbsp;же.</p>
         </li>
-        <li class="services__item credit hidden" id="credit">
+        <li class="services__item credit" id="credit">
           <h3>Кредит</h3>
           <p>Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
             кредита. Выгодные для нашего банка, разумеется.</p>

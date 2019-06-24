@@ -18,11 +18,11 @@ function changeSlider (elem, parent) {
     var sliderItemElement = sliderItemElements[i];
 
     if (sliderItemElement.id === dataSlider) {
-      sliderItemElement.classList.remove('hidden');
+      sliderItemElement.classList.add(parent.id + '__item--current');
       continue;
     }
 
-    sliderItemElement.classList.add('hidden');
+    sliderItemElement.classList.remove(parent.id + '__item--current');
   }
 }
 
