@@ -67,7 +67,7 @@ document.addEventListener('click', function (event) {
 
   if (target.tagName === 'BUTTON' && target.dataset.slider) {
 
-    parentElement = findElement(target, currentTarget, 'js-slider')
+    parentElement = findElement(target, currentTarget, 'js-slider');
 
     changeActiveButton(target, parentElement);
     changeSlider(target, parentElement);
